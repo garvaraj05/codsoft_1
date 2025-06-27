@@ -1,0 +1,251 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf6;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff5e57;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 0.4rem 0.9rem; 
+  border-radius: 20px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover:not(.signin-btn) {
+  background-color: rgba(238, 234, 230, 0.333); 
+  color: white; 
+  cursor: pointer;
+}
+
+.nav-links a.signin-btn {
+  background-color: white;
+  color: #ff5e57;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(255, 94, 87, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.nav-links a.signin-btn:hover {
+  background-color: #ff5e57;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 94, 87, 0.6);
+  transform: scale(1.05);
+  border-color: white;
+}
+
+/* Banner */
+.banner {
+      background-image: linear-gradient(rgb(209 194 194 / 50%), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/premium-vector/fast-food-delivery-concept-with-scooter-food-items-vector-illustration_345238-4830.jpg);
+  color: white;
+  text-align: center;
+  padding: 15rem 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.banner p {
+  font-size: 1.3rem;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 3rem 2rem;
+  background-color: #fff7f0;
+  text-align: center;
+}
+
+.menu-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.menu-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem; 
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 320px; 
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-weight: bold;
+  color: #ff5e57;
+  font-size: 1rem;
+}
+.add-to-cart-btn {
+  margin-top: 1rem;
+  background-color: #ff5e57; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(255, 94, 87, 0.4);
+}
+
+.add-to-cart-btn:hover {
+  background-color: white;
+  color: #ff5e57;
+  box-shadow: 0 2px 6px rgba(255, 94, 87, 0.8);
+}
+
+
+/* Testimonials */
+.testimonial-section {
+  padding: 5rem 2rem; 
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  margin-bottom: 2.5rem;
+  font-size: 2.4rem; 
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; 
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-left: 6px solid #ff5e57;
+  padding: 1.5rem 2rem;
+  width: 350px; 
+  font-size: 1.1rem; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-card strong {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.about-section {
+  background-color: #fff7f0;
+  padding: 5rem 2rem; 
+  text-align: center;
+  color: #444;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;   
+  color: #ff5e57;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 1.2rem auto;  
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .menu-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    padding: 4rem 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+}
